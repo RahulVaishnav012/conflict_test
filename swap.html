@@ -8,6 +8,18 @@
 <body>
     <h1>Swapping Numbers</h1>
     <p id="numbers">A: 5, B: 10</p>
+    <button onclick="swapNumbers()">Swap Numbers</button>
+
+    <script>
+        function swapNumbers() {
+            var a = 5;
+            var b = 10;
+            var temp = a;
+            a = b;
+            b = temp;
+            document.getElementById("numbers").innerText = "A: " + a + ", B: " + b;
+        }
+    </script>
 </body>
 </html>
 
